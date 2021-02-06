@@ -36,26 +36,10 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 - You will see all the available keymaps and the one we use is 'us'
 - There might seems alot output to scroll through, so you may want to try this (if you replace ```<some-keywords>``` with 'u', you will see all the keymaps which contain 'u')
 ```console
-    # localectl list-keymaps | grep _<some-keywords>_
-```
-- To set the keymap (replace the <keymap> with 'us' in my case)
-    -> loadkeys <keymap>
-
-
-Say what the step will be
-
-```
-Give the example
+    # localectl list-keymaps | grep <some-keywords>
 ```
 
-And repeat
-
+- To set the keymap (replace the ```<keymap>``` with 'us' in my case)
+```console
+    # loadkeys <keymap>
 ```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
