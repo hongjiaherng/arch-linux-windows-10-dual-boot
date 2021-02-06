@@ -31,7 +31,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 - In my case use the default US keymap, no change is needed
 - To play with it, list all the available keymaps
 ```console
-    localectl list-keymaps
+    # localectl list-keymaps
 ```
 - You will see all the available keymaps and the one we use is 'us'
 - There might seems alot to scroll through, so you may want to try this (if you replace <some-keywords> with 'u', you will see all the keymaps which contain 'u')
