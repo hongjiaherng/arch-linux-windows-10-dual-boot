@@ -1,13 +1,5 @@
 # Dual Boot Arch Linux & Windows 10
 
-# Table of Contents
-1. [Introduction](#introduction)
-2. [My computer](#my-computer)
-3. [My choices](#my-choices)
-4. [Getting started](#getting-started)
-5. [Start installing](#start-installing)
-    1) [Keymap](#1-keymap)
-
 ## Introduction
 
 The following are my personal notes on dual booting Arch Linux with Windows 10. I have Windows 10 originally installed on my computer. This installation takes about 15 GB of spaces.
@@ -34,6 +26,39 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 4. Boot into the usb stick
 
 ## Start installing
+| No. | Installing step |
+| -- | -- |
+| 1  |[Keymap](#1-keymap)|
+| 2  |[Internet connection](#2-internet-connection)|
+| 3  |[Synchronize network time protocol](#3-synchronize-network-time-protocol)|
+| 4  |[Look for the fastest server to download packages](#4-synchronize-mirror-list-to-get-the-fastest-server-to-download-packages)|
+| 5  |[Partitioning](#5-partitioning-(crucial-part))|
+| 6  |[Format partition](#6-format-the-newly-created-partition)|
+| 7  |[Mount the file systems](#7-mount-the-file-systems)|
+| 8  |[Base system install](#8-base-system-install)|
+| 9  |[FSTAB](#9-fstab)|
+| 10 |[Enter the chroot](#10-enter-the-chroot)|
+| 11 |[Create swapfile](#11-create-swapfile-(as-we-don't-create-swap-partition-just-now))|
+| 12 |[Set timezone](#12-set-timezone)|
+| 13 |[Set locale](#13-set-locale)|
+| 14 |[Set hostname](#14-set-hostname)|
+| 15 |[Set the root password](#15-set-the-root-password)|
+| 16 |[Install bootloader GRUB](#16-install-bootloader-named-grub-for-booting-into-arch-linux)|
+| 17 |[Enable some services](#17-enable-some-services-to-automatically-enable-at-start-up)|
+| 18 |[Create new user](#18-create-new-user)|
+| 19 |[Leave the Arch ISO installer](#19-leave-the-arch-iso-installer)|
+| 20 |[Connect to internet again](#20-connect-to-internet-again)|
+| 21 |[Graphics driver](#21-graphics-driver)|
+| 22 |[Display server](#22-display-server)|
+| 23 |[Display manager & Desktop environment](#23-display-manager-depends-on-desktop-environment-you-want-to-use-and-desktop-environment)|
+| 24 |[Enable display manager](#24-enable-display-manager)|
+| 25 |[Install yay](#25-install-yay-aur-arch-user-repository-helper-which-helps-to-install-packages-from-aur)|
+| 26 |[Some extra things to install](#26-some-extra-things-to-install-browser-office-tools-font-backup-solution)|
+| 27 |[Reboot](#27-reboot)|
+| 28 |[Download some useful packages](#28-download-some-useful-packages)|
+| 29 |[Solve some bugs](#29-solve-some-bugs)|
+| 30 |[Start customizing](#30-start-customizing)|
+&nbsp;
 
 ### *1. Keymap*
 - In my case, I use the default US keymap, no change is needed
