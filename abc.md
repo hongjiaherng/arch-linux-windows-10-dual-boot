@@ -26,7 +26,6 @@ _________________________________________
 4. Boot into the usb stick
 
 Start installing
-_________________________________________
 1. Keymap
 - In my case use the default US keymap, no change is needed
 - To play with it, list all the available keymaps
@@ -175,7 +174,7 @@ nvme0n1         512G
     - 'defaults'  -> options are set to defaults
     - '0'         -> set dump to 0
     - '0'         -> set pass to 0
-- CTRL-O to save and CTRL-X to exit
+
 
 12. Set timezone
 - View the current status of timedatectl setting
