@@ -1,5 +1,13 @@
 # Dual Boot Arch Linux & Windows 10
 
+# Table of Contents
+1. [Introduction](#introduction)
+2. [My computer](#my-computer)
+3. [My choices](#my-choices)
+4. [Getting started](#getting-started)
+5. [Start installing](start-installing)
+    1) [Keymap](#1.-keymap)
+
 ## Introduction
 
 The following are my personal notes on dual booting Arch Linux with Windows 10. I have Windows 10 originally installed on my computer. This installation takes about 15 GB of spaces.
