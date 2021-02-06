@@ -666,6 +666,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
     ```console
         # sudo pacman -S gvfs
     ```
+    - After doing this, my problem solved, kindly research yourself if this doesn't solve your problem
 
 &nbsp;
 ### *30. Start customizing*
