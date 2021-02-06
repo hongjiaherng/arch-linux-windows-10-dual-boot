@@ -30,7 +30,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 1. Keymap
 - In my case use the default US keymap, no change is needed
 - To play with it, list all the available keymaps
-```bat
+```console
     localectl list-keymaps
 ```
 - You will see all the available keymaps and the one we use is 'us'
