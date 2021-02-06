@@ -27,7 +27,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 
 ## Start installing
 
-### 1. *Keymap*
+## 1. *Keymap*
 - In my case, I use the default US keymap, no change is needed
 - To play with it, list all the available keymaps
 ```console
