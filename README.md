@@ -26,19 +26,19 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 4. Boot into the usb stick
 
 ## Start installing
-| No. | Installing step |
+| No. | Installing steps |
 | -- | -- |
 | 1  |[Keymap](#1-keymap)|
 | 2  |[Internet connection](#2-internet-connection)|
 | 3  |[Synchronize network time protocol](#3-synchronize-network-time-protocol)|
 | 4  |[Look for the fastest server to download packages](#4-synchronize-mirror-list-to-get-the-fastest-server-to-download-packages)|
-| 5  |[Partitioning](#5-partitioning-(crucial-part))|
+| 5  |[Partitioning](#5-partitioning-crucial-part)|
 | 6  |[Format partition](#6-format-the-newly-created-partition)|
 | 7  |[Mount the file systems](#7-mount-the-file-systems)|
 | 8  |[Base system install](#8-base-system-install)|
 | 9  |[FSTAB](#9-fstab)|
 | 10 |[Enter the chroot](#10-enter-the-chroot)|
-| 11 |[Create swapfile](#11-create-swapfile-(as-we-don't-create-swap-partition-just-now))|
+| 11 |[Create swapfile](#11-create-swapfile-as-we-dont-create-swap-partition-just-now)|
 | 12 |[Set timezone](#12-set-timezone)|
 | 13 |[Set locale](#13-set-locale)|
 | 14 |[Set hostname](#14-set-hostname)|
@@ -47,7 +47,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 | 17 |[Enable some services](#17-enable-some-services-to-automatically-enable-at-start-up)|
 | 18 |[Create new user](#18-create-new-user)|
 | 19 |[Leave the Arch ISO installer](#19-leave-the-arch-iso-installer)|
-| 20 |[Connect to internet again](#20-connect-to-internet-again)|
+| 20 |[Connect to internet again](#20-connect-to-the-internet-again)|
 | 21 |[Graphics driver](#21-graphics-driver)|
 | 22 |[Display server](#22-display-server)|
 | 23 |[Display manager & Desktop environment](#23-display-manager-depends-on-desktop-environment-you-want-to-use-and-desktop-environment)|
@@ -58,8 +58,8 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 | 28 |[Download some useful packages](#28-download-some-useful-packages)|
 | 29 |[Solve some bugs](#29-solve-some-bugs)|
 | 30 |[Start customizing](#30-start-customizing)|
-&nbsp;
 
+&nbsp;
 ### *1. Keymap*
 - In my case, I use the default US keymap, no change is needed
 - To play with it, list all the available keymaps
