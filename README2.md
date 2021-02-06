@@ -239,7 +239,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 
 &nbsp;
 ### *9. FSTAB*
-- Generate a fstab file (append the UUID of of the partitions which contains '/mnt' directory to fstab file in this directory '/mnt/etc/fstab', in my case I have 'nvme0n1p1' (/mnt/boot), 'nvme0n1p4' (/mnt/windows10) and 'nvme0n1p5' (/mnt) which set '/mnt' as a mount point)
+- Generate a fstab file (append the UUID of the partitions which contains '/mnt' directory to fstab file in this directory '/mnt/etc/fstab', in my case I have 'nvme0n1p1' (/mnt/boot), 'nvme0n1p4' (/mnt/windows10) and 'nvme0n1p5' (/mnt) which set '/mnt' as a mount point)
 ```console
     # genfstab -U /mnt >> /mnt/etc/fstab
 ```
