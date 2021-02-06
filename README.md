@@ -5,8 +5,8 @@
 2. [My computer](#my-computer)
 3. [My choices](#my-choices)
 4. [Getting started](#getting-started)
-5. [Start installing](start-installing)
-    1) [Keymap](#1.-keymap)
+5. [Start installing](#start-installing)
+    1) [Keymap](#1-keymap)
 
 ## Introduction
 
