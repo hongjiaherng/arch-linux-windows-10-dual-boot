@@ -368,7 +368,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 
 - Enter hostname into the /etc/hostname file, in my case, I wanna call it 'arch'
 - CTRL-O to write changes, CTRL-X to exit
-- Open to add matching entries to the file '/etc/hosts' (it contains something originally)
+- Open the file '/etc/hosts' (it contains something originally)
 ```console
     # nano /etc/hosts
 ```
