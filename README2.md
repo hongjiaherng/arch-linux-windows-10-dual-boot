@@ -45,7 +45,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
     # loadkeys <keymap>
 ```
 
-&nbsp
+&nbsp;
 ### *2. Internet connection*
 - Try to ping some website to see if you are connected to internet (You should get error here, indicates the internet connection is not available)
 ```console
@@ -100,13 +100,13 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
     # ping archlinux.com
 ```
 
-&nbsp
+&nbsp;
 ### *3. Synchronize network time protocol*
 ```console
     # timedatectl set-ntp true
 ```
 
-&nbsp
+&nbsp;
 ### *4. Synchronize mirror list to get the fastest server to download packages*
 - Synchronize server
 ```console
