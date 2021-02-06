@@ -27,7 +27,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 
 ## Start installing
 
-## 1. *Keymap*
+### *1. Keymap*
 - In my case, I use the default US keymap, no change is needed
 - To play with it, list all the available keymaps
 ```console
@@ -43,3 +43,59 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 ```console
     # loadkeys <keymap>
 ```
+
+### *2. Internet connection*
+- Try to ping some website to see if you are connected to internet (You should get error here, indicates the internet connection is not available)
+```console
+    # ping google.com
+```
+
+- Check the current internet status
+```console
+    # ip link
+```
+- Refer to the second output, in my case (using wifi) the network interface named 'wlan0'
+- Observe closely at the attribute 'state', I got DOWN, which means I'm not connected to Internet
+- Use iwctl to connect to internet
+    - To get an interactive prompt do:
+    ```console
+        # iwctl
+    ```
+
+    - List all Wi-Fi devices: (observe the network interface name, in my case 'wlan0')
+    ```console
+        # device list
+    ```
+
+    - To scan for the networks: (change ```<device>``` with the network interface name, 'wlan0')
+    ```console
+        # station <device> scan
+    ```
+    
+    - List all the available networks:
+    ```console
+        # station <device> get-networks
+    ```
+
+    - To connect to a network: (change ```<SSID>``` with the name of the network which you wanna connect)
+    ```console
+        # station <device> connect <SSID>
+    ```
+
+    - exit the iwctl interactive prompt
+    ```console
+        # exit
+    ```
+
+- Recheck the internet connection status
+```console
+    # ip link
+```
+
+- You should be able to see UP at 'state' (note that this is just a temporary connection, if you restart your computer now, you need to repeat the above steps)
+- Reconfirm by ping some website (you should see something work properly here, CTRL-C to stop)
+```console
+    # ping archlinux.com
+```
+
+
