@@ -569,7 +569,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 
 &nbsp;
 ### *24. Enable display manager*
-- Enable lightdm so that it will automatically execute when we boot up the machine, you should replace 'lightdm.service' with other display manager's service if you are not using the same display manager with me
+- Enable lightdm so that it will automatically execute when we boot up the machine, you should replace 'lightdm' with other display manager's service if you are not using the same display manager as me
 ```console
     # sudo systemctl enable lightdm
 ```
