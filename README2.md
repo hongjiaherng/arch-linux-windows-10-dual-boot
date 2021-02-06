@@ -33,6 +33,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 ```console
     # localectl list-keymaps
 ```
+
 - You will see all the available keymaps and the one we use is 'us'
 - There might seems alot output to scroll through, so you may want to try this (if you replace ```<some-keywords>``` with 'u', you will see all the keymaps which contain 'u')
 ```console
@@ -57,7 +58,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 - Refer to the second output, in my case (using wifi) the network interface named 'wlan0'
 - Observe closely at the attribute 'state', I got DOWN, which means I'm not connected to Internet
 - Use iwctl to connect to internet
-    - To get an interactive prompt do:
+    - To get an interactive prompt do this
     ```console
         # iwctl
     ```
@@ -98,4 +99,28 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
     # ping archlinux.com
 ```
 
+### *3. Synchronize network time protocol*
+```console
+    # timedatectl set-ntp true
+```
 
+### *4. Synchronize mirror list to get the fastest server to download packages*
+- Synchronize server
+```console
+    # pacman -Syyy
+```
+
+- Download 'reflector' package to sort server based on rate
+```console
+    # pacman -S reflector
+```
+
+- Set to the server to your country or nearest to your country (in my case, replace ```<country>``` with Singapore)
+```console
+    # reflector -c <country> -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+```
+
+- Resync the server
+```console
+    pacman -Syyy
+```
