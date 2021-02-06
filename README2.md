@@ -238,7 +238,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 - ```<firmware-for-processor>``` - replace it with either 'intel-ucode' (if use intel processor), or 'amd-ucode' (if use amd processor), or don't need to install (if use virtual machine), I use intel processor, replace ```<firmware-for-processor>``` with 'intel-ucode'
 
 &nbsp;
-### *9. FSTAB *
+### *9. FSTAB*
 - Generate a fstab file (append the UUID of of the partitions which contains '/mnt' directory to fstab file in this directory '/mnt/etc/fstab', in my case I have 'nvme0n1p1' (/mnt/boot), 'nvme0n1p4' (/mnt/windows10) and 'nvme0n1p5' (/mnt) which set '/mnt' as a mount point)
 ```console
     # genfstab -U /mnt >> /mnt/etc/fstab

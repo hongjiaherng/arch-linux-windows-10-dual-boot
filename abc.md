@@ -1,11 +1,8 @@
 Dual Boot Arch Linux & Windows 10
-_________________________________________
 Introduction
-_________________________________________
 - The following are my personal notes on dual booting Arch Linux with Windows 10. I have Windows 10 originally installed on my computer. This installation takes about 15 GB of spaces.
 
 My computer
-_________________________________________
 - UEFI system
 - 512GB NVME ssd
 - Wi-Fi (no ethernet)
@@ -13,13 +10,11 @@ _________________________________________
 - NVIDIA gpu
 
 My choices
-_________________________________________
 - Bootloader: grub
 - Display manager: lightdm
 - Desktop environment: xfce4
 
 Getting started
-_________________________________________
 1. Partition the disk (in my case, I allocate 100GB for my Arch)
 2. Download Arch Linux ISO
 3. Burn Arch Linux ISO into a usb stick
