@@ -136,7 +136,7 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 ```
 
 - The following is the illustration of my output (not the actual output) Observe the previous output properly and you won't see your empty partition which you created just now
-```console
+```output
     nvme0n1         512G
     ├─nvme0n1p1     260M        (EFI System)
     ├─nvme0n1p2     701M        (Windows recovery environment)
@@ -148,19 +148,19 @@ The following are my personal notes on dual booting Arch Linux with Windows 10. 
 ```console
     # cfdisk /dev/nvme0n1
 ```
-
-- Observe the output, you will be able to see your other partitions on your computer and their respective type (EFI System, Microsoft basic data, Windows recovery environment, Microsoft reserved, ...), and most importantly the free space you created just now
-- Navigate to the free space and press ENTER (select 'New' option)
-- In my installation, I don't want to create a SWAP partition, but I decided to create a SWAP file instead later in my linux partition
-- Thus, in my case, accept the default size by hit ENTER
-- Write the changes to the disk by navigate to the option 'Write' and hit ENTER, confirm by typing in 'yes'
-- Navigate to 'Quit' to quit cfdisk
+- Inside cfdisk, 
+    - Observe the output, you will be able to see your other partitions on your computer and their respective type (EFI System, Microsoft basic data, Windows recovery environment, Microsoft reserved, ...), and most importantly the free space you created just now
+    - Navigate to the free space and press ENTER (select 'New' option)
+    - In my installation, I don't want to create a SWAP partition, but I decided to create a SWAP file instead later in my linux partition
+    - Thus, in my case, accept the default size by hit ENTER
+    - Write the changes to the disk by navigate to the option 'Write' and hit ENTER, confirm by typing in 'yes'
+    - Navigate to 'Quit' to quit cfdisk
 - View the current available partitions again
 ```console
     # lsblk
 ```
 - You will see your newly created partition (the following is the illustration for my output, the actual output have some more details)
-```console
+```output
     nvme0n1         512G
     ├─nvme0n1p1     260M        (EFI System)
     ├─nvme0n1p2     701M        (Windows recovery environment)
